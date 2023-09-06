@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchDataFromApi } from "../utils/api";
+
+//creating custom hooks..
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);

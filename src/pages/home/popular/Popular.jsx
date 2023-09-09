@@ -21,7 +21,7 @@ const Popular = () => {
         {/* sending data & onTabChange as props in SwitchTabs component  */}
         <SwitchTabs data={["Movies", "TV Shows"]} onTabChange={onTabChange} />
       </ContentWrapper>
-      <Carousel data={data?.results} loading={loading} />
+      <Carousel data={data?.results} loading={loading} endPoint={endPoint} />
     </div>
   );
 };
